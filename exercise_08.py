@@ -14,10 +14,10 @@ while range > 0:
     intList.append(inp)
 print("Original List: " + str(intList))
 
-copyList = intList.copy()
-onceList = intList.copy()
+onceList = list()
 for x in intList:
-     for y in copyList:
-          if x == y:
-               onceList.remove(y)
+    if x not in (onceList):
+         onceList.append(x)
+    else:
+         onceList.remove(x)
 print("Nums that appear once: " + str(onceList))
