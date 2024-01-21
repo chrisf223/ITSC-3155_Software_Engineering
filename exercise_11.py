@@ -1,3 +1,5 @@
+## Write a script that takes in a string from the user. Print the string out backwards.
+
 inp = input("Enter a String: ")
 backwards = ""
 inpSize = len(inp)

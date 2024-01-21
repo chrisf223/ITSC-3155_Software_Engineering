@@ -18,6 +18,6 @@ onceList = list()
 for x in intList:
     if x not in (onceList):
          onceList.append(x)
-    else:
-         onceList.remove(x)
+    ##else:
+         ##onceList.remove(x)
 print("Nums that appear once: " + str(onceList))

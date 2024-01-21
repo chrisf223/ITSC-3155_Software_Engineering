@@ -1,3 +1,6 @@
+##Write a script that takes in a string from the user. Print the string where all the lower case letters are shifted to the front and the spaces removed. 
+##Keep the relative order of the lower case letters and upper case letters.
+
 inp = input("Enter a String: ")
 inpSize = len(inp)
 lowString =""
