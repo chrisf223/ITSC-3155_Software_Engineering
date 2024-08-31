@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses</title>
+    <link rel="stylesheet" href="css/courses.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/Logo.png" alt="" />
+      </div>
+      <div class="nav-list">
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="index.html">Sign Out</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h1>Please select a course below to begin studying...</h1>
+      <div class="grid-container">
+        <button class="button">
+          <a href="introductionToComputerScienceOne.html"
+            >Introduction to Computer Science I</a
+          >
+        </button>
+        <button class="button">
+          <a href="dataStructuresAndAlgorithms.html"
+            >Data Structures & Algorithms</a
+          >
+        </button>
+        <button class="button">
+          <a href="web-basedApplicationDesignAndDevelopment.html"
+            >Web-based Application Design and Development</a
+          >
+        </button>
+        <button class="button">
+          <a href="mobileApplicationDevelopment.html"
+            >Mobile Application Development</a
+          >
+        </button>
+        <button class="button">
+          <a href="ITIS3310.html">
+            Software Architecture & Design
+          </a>
+        </button>
+        <button class="button">
+          <a href="ITSC1213.html">
+            Introduction to Computer Science II
+          </a>
+        </button>
+        <button class="button">
+          <a href="ITSC2181.html">
+            Introduction to Computer Systems
+          </a>
+        </button>
+        <button class="button">
+          <a href="ITSC3146.html">
+            Introduction to Operating Systems and Networking
+          </a>
+        </button>
+        <button class="button">
+          All Courses
+        </button>
+      </div>
+
+      <div class="upload-material">
+        <h2>
+          Think we should add more material? <br />
+          Here you suggest your own
+        </h2>
+
+        <form action="#">
+          <input
+            type="text"
+            name="From"
+            id="From"
+            placeholder="Your Name"
+            required
+          />
+
+          <div class="select-resource-type">
+            <input
+              type="radio"
+              name="resource-type"
+              id="websites"
+              value="websites"
+            />
+            <label for="websites">Website</label>
+
+            <input
+              type="radio"
+              name="resource-type"
+              id="videos"
+              value="videos"
+            />
+            <label for="videos">Video</label>
+
+            <input type="radio" name="resource-type" id="books" value="books" />
+            <label for="books">Book</label>
+
+            <input
+              type="radio"
+              name="resource-type"
+              id="articles"
+              value="articles"
+            />
+            <label for="articles">Article</label>
+          </div>
+
+          <input
+            type="text"
+            name="link"
+            id="link"
+            placeholder="edutree.com"
+            required
+          />
+          <input
+            type="text"
+            name="description"
+            id="description"
+            placeholder="description"
+            required
+          />
+          <input
+            type="text"
+            name="course"
+            id="course"
+            placeholder="course"
+            required
+          />
+          <input type="submit" name="submit" id="submit" value="Send" />
+        </form>
+      </div>
+    </main>
+
+    <footer>©2024 Edutree. all rights reserved</footer>
+  </body>
+</html>

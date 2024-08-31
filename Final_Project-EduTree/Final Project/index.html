@@ -1,0 +1,47 @@
+<!--python -m http.server 8000-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Emil Kozicki">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <title>Login Page</title>
+</head>
+
+<body>
+    <main>
+        <p class="text-center">Welcome to Edu Tree! Please, log in to begin.</p>
+        <div class="mainClass">
+            <div class="block">
+                <div class="container-img">
+                    <img src="images/Logo.png">
+                </div>
+                <div class="container-content2">
+                    <p class="text-center3">Find all the resources you might need
+                        to ace CCI offered classes. Our wide variety of
+                        resources will be of tremendous help.
+                    </p>
+                </div>
+            </div>
+            <div class="container-content">
+                <h2 class="text-center2">Log in with Google:</h2>
+                <div id="g_id_onload"
+                     data-client_id="966918287650-r14dbrcqiulre1rqivv1skft8kssoapv.apps.googleusercontent.com"
+                     data-callback="onSignIn">
+                </div>
+                <div class="g_id_signin" data-type="standard"></div>
+            </div> 
+        </div>
+    </main>
+    <script>
+        function onSignIn(googleUser) {
+            // Handle sign-in success here
+            console.log('User signed in:', googleUser);
+            // Redirect to home.html after successful sign-in
+            window.location.href = "home.html";
+        }
+    </script>
+    <link rel="stylesheet" href="css/login.css">
+</body>
+</html>

@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  min-height: 100vh;
+  background-color: #274e13ff;
+}
+
+header {
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  padding: 1rem;
+}
+
+footer {
+  border-top: 0.1em solid gray;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  padding: 1rem 0;
+  justify-content: center;
+  align-items: center;
+  color: #f1c232;
+  background-color: #274e13ff;
+}
+
+/* Logo styling */
+.logo img {
+  float: right;
+  height: 40px;
+}
+
+/* Navigation styling */
+.nav-list {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.nav-list ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-list ul li a {
+  margin-right: 0.5rem;
+  text-decoration: none;
+  color: #f1c232;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.nav-list ul li a:hover {
+  background-color: #f1c232;
+  color: black;
+}
+
+h1 {
+  color: #f1c232;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.button {
+  background-color: #f1c232;
+  border: none;
+  color: #274e13ff;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button a {
+  text-decoration: none;
+  color: #274e13ff;
+}
+
+.button:hover {
+  background-color: #e8ba2e;
+}
+
+.upload-material {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #274e13ff;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.upload-material h2 {
+  color: #f1c232;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+form {
+  align-items: center;
+  max-width: 300px;
+}
+
+.select-resource-type {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+form input,
+form label {
+  display: flex;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+form input[type="submit"] {
+  background-color: #f1c232;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #d9a617;
+}

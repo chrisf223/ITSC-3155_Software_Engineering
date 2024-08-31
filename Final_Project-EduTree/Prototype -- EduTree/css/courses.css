@@ -1,0 +1,72 @@
+body {
+    min-height: 100vh;
+
+    background-color: #274e13ff;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #f1c232;
+    text-align: center;
+}
+
+
+nav {
+    background-color: #274e13ff;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #f1c232;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li img {
+    float: right;
+    height: 40px;
+    margin: 5px;
+}
+
+/* Change color of links on hover */
+li a:hover {
+    background-color: #111;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.button {
+    background-color: #f1c232;
+    border: none;
+    color: #274e13ff;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #e8ba2e;
+}

@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    min-height: 100vh;
+    background-color: #274e13ff;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    margin: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+}
+
+footer {
+    border-top: 0.1em solid gray;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    padding: 1rem 0;
+    justify-content: center;
+    align-items: center;
+    color: #f1c232;
+    background-color: #274e13ff;
+}
+
+/* _______________________________________________________ */
+
+h1 {
+    color: #f1c232;
+    text-align: center;
+}
+/* Logo styling */
+.logo img{
+    float: right;
+    height: 40px;
+}
+
+/* Navigation styling */
+.nav-list {
+    flex-grow: 1; 
+    text-align: left;
+}
+
+.nav-list ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-list ul li a {
+    margin-right: 0.5rem;
+    text-decoration: none;
+    color: #f1c232;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.nav-list ul li a:hover {
+    background-color: #f1c232;
+    color: black;
+}
+
+/* Filters and Course Information/Resources */
+.container {
+    display: flex;
+    flex-direction: row;
+    border: 1px black solid;
+}
+
+.highlight {
+    color: #f1c232;
+}
+
+/* FILTERS--------------- */
+
+.filter-container {
+    width: 20vw;
+    padding: 0.5rem;
+    border-right: 1px black solid;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Course Information------------------------- */
+
+.course-container {
+    width: 80vw;
+    padding: 0.5rem;
+}
+
+.course-information {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+table tr td {
+    border: 0.1rem black dotted;
+}
+
+/* Resources---------------------------------- */
+.resources {
+    margin-top: 3rem;
+    border-top: 2px black solid;
+}
+
+.resource {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.image {
+    flex: 0.5;
+}
+
+.default-resource-image {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.resource-information {
+    flex: 4.5; 
+}

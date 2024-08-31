@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses</title>
+    <link rel="stylesheet" href="static/css/courses.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="static/images/Logo.png" alt="" />
+      </div>
+      <div class="nav-list">
+        <nav>
+          <ul>
+            <li><a href="templates/home.html">Home</a></li>
+            <li><a href="templates/courses.html">Courses</a></li>
+            <li><a href="templates/contact.html">Contact Us</a></li>
+            <li><a href="templates/login.html">Sign Out</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h1>Please select a course below to begin studying...</h1>
+      <div class="grid-container">
+        <button class="button">
+          <a href="templates/introductionToComputerScienceOne.html"
+            >Introduction to Computer Science I</a
+          >
+        </button>
+        <button class="button">
+          <a href="templates/dataStructuresAndAlgorithms.html"
+            >Data Structures & Algorithms</a
+          >
+        </button>
+        <button class="button">
+          <a href="templates/web-basedApplicationDesignAndDevelopment.html"
+            >Web-based Application Design and Development</a
+          >
+        </button>
+        <button class="button">
+          <a href="templates/mobileApplicationDevelopment.html"
+            >Mobile Application Development</a
+          >
+        </button>
+        <button class="button">Logic & Algorithms</button>
+        <button class="button">Introduction to Computer Systems</button>
+        <button class="button">Software Engineering</button>
+        <button class="button">Computer Vision</button>
+        <button class="button">All Courses</button>
+      </div>
+
+      <div class="upload-material">
+        <h2>
+          Think we should add more material? <br />
+          Here you suggest your own
+        </h2>
+
+        <form action="#">
+          <input
+            type="text"
+            name="From"
+            id="From"
+            placeholder="Your Name"
+            required
+          />
+
+          <div class="select-resource-type">
+            <input
+              type="radio"
+              name="resource-type"
+              id="websites"
+              value="websites"
+            />
+            <label for="websites">Website</label>
+
+            <input
+              type="radio"
+              name="resource-type"
+              id="videos"
+              value="videos"
+            />
+            <label for="videos">Video</label>
+
+            <input type="radio" name="resource-type" id="books" value="books" />
+            <label for="books">Book</label>
+
+            <input
+              type="radio"
+              name="resource-type"
+              id="articles"
+              value="articles"
+            />
+            <label for="articles">Article</label>
+          </div>
+
+          <input
+            type="text"
+            name="link"
+            id="link"
+            placeholder="edutree.com"
+            required
+          />
+          <input
+            type="text"
+            name="description"
+            id="description"
+            placeholder="description"
+            required
+          />
+          <input
+            type="text"
+            name="course"
+            id="course"
+            placeholder="course"
+            required
+          />
+          <input type="submit" name="submit" id="submit" value="Send" />
+        </form>
+      </div>
+    </main>
+
+    <footer>©2024 Edutree. all rights reserved</footer>
+  </body>
+</html>

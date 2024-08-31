@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web-based Application Design and Development</title>
+    <link rel="stylesheet" href="css/course.css" />
+    <script
+      src="https://kit.fontawesome.com/7fd61558a8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/Logo.png" alt="" />
+      </div>
+      <div class="nav-list">
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="index.html">Sign Out</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1>ITSC 2181 - Introduction to Computer Systems</h1>
+      <div class="container">
+        <div class="filter-container">
+          <div class="filter-name">
+            <h3 class="highlight">Filters</h3>
+          </div>
+          <div class="filters">
+            <label><input type="checkbox" name="websites" />Websites</label>
+            <label><input type="checkbox" name="videos" />Videos</label>
+            <label><input type="checkbox" name="books" />Books</label>
+            <label><input type="checkbox" name="articles" />Articles</label>
+          </div>
+        </div>
+        <div class="course-container">
+          <div class="course-information">
+            <div class="description">
+              <h3 class="highlight">Description:</h3>
+              <p>
+                Introduction to computer system abstractions reflected in programming languages, operating systems, architectures, 
+                and networks.
+              </p>
+            </div>
+            <table>
+              <tr>
+                <td class="highlight">Prerequisites</td>
+                <td>ITSC 1212 - Introduction to Computer Science I</td>
+              </tr>
+              <tr>
+                <td class="highlight">Language/s</td>
+                <td>C, Assembly</td>
+              </tr>
+              <tr>
+                <td class="highlight">IDE/API Platform</td>
+                <td>VSCode, RARS Simulator</td>
+              </tr>
+              <tr>
+                <td class="highlight">Topics</td>
+                <td>
+                    Overview of computer and processor architecture, instruction set architecture and introduction to assembly 
+                    language, C programming, system calls, processes and process memory layout, interfaces for memory allocation 
+                    and file systems, file and directory management via the command line, network architecture and protocols 
+                    (such as HTTP, MAC, IP, DNS).
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="resources">
+            <h3 class="highlight">Resources:</h3>
+
+            <div class="resource website">
+              <div class="image">
+                <a
+                  href="https://www.youtube.com/playlist?list=PL98qAXLA6aftD9ZlnjpLhdQAOFI8xIB6e"
+                  target="_blank"
+                >
+                  <img
+                    src="images/Default Video Image.png"
+                    alt="Image"
+                    class="default-resource-image"
+                  />
+                </a>
+                <p>C Programming for Beginners</p>
+              </div>
+              <div class="resource-information">
+                <p>
+                  This tutorial teaches the basics of C, which is the main language being taught in this class.  
+                </p>
+              </div>
+              <div class="like-button">
+                <button>
+                  <i class="fa-regular fa-thumbs-up thumbs-up"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="resource website">
+                <div class="image">
+                  <a
+                    href="https://diveintosystems.org/"
+                    target="_blank"
+                  >
+                    <img
+                      src="images/Default Website Image.png"
+                      alt="Image"
+                      class="default-resource-image"
+                    />
+                  </a>
+                  <p>Dive into Systems
+                </p>
+                </div>
+                <div class="resource-information">
+                  <p>
+                    Dive into Systems is a free, online textbook that serves as a gentle introduction to computer systems, 
+                    computer organization, and parallel computing. It also covers programming in C and Assembly.
+                  </p>
+                </div>
+                <div class="like-button">
+                  <button>
+                    <i class="fa-regular fa-thumbs-up thumbs-up"></i>
+                  </button>
+                </div>
+              </div>
+            
+      </div>
+    </main>
+
+    <footer>©2024 Edutree. all rights reserved</footer>
+  </body>
+</html>
